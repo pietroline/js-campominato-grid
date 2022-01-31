@@ -24,6 +24,18 @@ function difficolta(livello){
     return [caselle, ordine];
 }
 
+function createElement(grid, caselle, ordine){
+    for(let i=1; i<=caselle; i++){
+
+        const box = document.createElement("div");
+        box.classList.add("quadrato");
+        box.classList.add(ordine);
+        
+        grid.appendChild(box);
+
+    }
+}
+
 
 
 const play = document.getElementById("play");
@@ -38,15 +50,8 @@ play.addEventListener("click", function(){
 
     // eseguo append delle caselle in funzione della difficoltà
     const grid = document.getElementById("grid");
-    for(let i=1; i<=difficolta(livello)[0]; i++){
-
-        const box = document.createElement("div");
-        box.classList.add("quadrato");
-        box.classList.add(`${difficolta(livello)[1]}`);
-        
-        grid.appendChild(box);
-
-    }
+    createElement(grid, difficolta(livello)[0], difficolta(livello)[1])
+   
    
 });
 

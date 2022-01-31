@@ -11,15 +11,15 @@ function difficolta(livello){
         caselle = 100;
         ordine = "dieci";
     }else if(livello == "difficile"){
-        caselle = 89;
+        caselle = 81;
         ordine = "nove";
     }else if(livello == "impossibile"){
         caselle = 49;
         ordine = "sette";
-    }/*else{
+    }else{
         alert("Risulta un errore critico! Contattare l'amministratore del sito");
        
-    }*/
+    }
 
     return [caselle, ordine];
 }
@@ -34,6 +34,11 @@ function createElement(grid, caselle, ordine){
         box.classList.add(ordine);
         
         grid.appendChild(box);
+
+        // Inserisco il numero della casella 
+        let numero = document.createTextNode(i);
+        box.appendChild(numero);
+
 
         // mi metto in ascolto sui click dei box e in caso venga premuto cambio colore del background-color
         box.addEventListener("click", function(){
@@ -60,7 +65,6 @@ play.addEventListener("click", function(){
     // eseguo append delle caselle in funzione della difficoltà
     const grid = document.getElementById("grid");
     createElement(grid, difficolta(livello)[0], difficolta(livello)[1]);
-   
    
 });
 

@@ -53,6 +53,12 @@ footer{
     border: 1px solid #000;
     
     cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.5rem;
 }
 
 .quadrato.dieci{
@@ -72,4 +78,5 @@ footer{
 
 .quadrato.clicked{
     background-color: #6094e8;
+    color: #fff;
 }

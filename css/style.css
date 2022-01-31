@@ -39,7 +39,7 @@ footer{
 }
 
 .contenitore{
-    width: 40rem;
+    width: 40rem; 
     height: 40rem;
 
     border: 1px solid #000;
@@ -48,10 +48,22 @@ footer{
 }
 
 .quadrato{
-    width: calc(100% /10);
-    height: calc(100% /10);
-
     float: left;
 
-    border: 1px solid #000;s
+    border: 1px solid #000;
+}
+
+.quadrato.dieci{
+    width: calc(100% /10);
+    height: calc(100% /10);
+}
+
+.quadrato.nove{
+    width: calc(100% /9);
+    height: calc(100% /9);
+}
+
+.quadrato.sette{
+    width: calc(100% /7);
+    height: calc(100% /7);
 }

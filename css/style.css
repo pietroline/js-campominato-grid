@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* inizio mini framework*/
+    .ms_float_left{
+        float: left;
+    }
+
+    .ms_float_right{
+        float: right;
+    }
+
+    .ms_clearfix{
+        content: "";
+        display: table;
+        clear: both;
+    }
+/* fine mini framework*/
+
+main{
+    background-color: #65ffd5;
+
+    height: 200px; /*provvisorio*/
+}
+
+header{
+    width: 80%;
+
+    margin: 2rem auto;
+}
+
+footer{
+    width: 80%;
+
+    margin: 2rem auto;
+}

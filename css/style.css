@@ -20,12 +20,6 @@
     }
 /* fine mini framework*/
 
-main{
-    background-color: #65ffd5;
-    
-    padding: 5rem;
-}
-
 header{
     width: 80%;
 
@@ -56,6 +50,22 @@ header{
 
 #play{
     padding: 0.5rem 0.8rem;
+}
+
+main{
+    background-color: #65ffd5;
+    
+    padding: 3rem;
+}
+
+.istruzioni{
+    text-align: center;
+    font-size: 4rem;
+
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 footer{

@@ -29,7 +29,8 @@ function difficolta(livello){
 const play = document.getElementById("play");
 play.addEventListener("click", function(){
 
-   
+    document.getElementById("grid").innerHTML = "";
+
     let livello = document.getElementById("difficolta").value;
     console.log(livello);
 

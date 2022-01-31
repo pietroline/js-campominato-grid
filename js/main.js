@@ -24,6 +24,8 @@ function difficolta(livello){
     return [caselle, ordine];
 }
 
+/*La funzione createElement() prende in ingresso il riferimento alla grid, il numero di caselle e la classe corrispondeneti alle difficoltà
+Si occupa di effettuare append dei box*/ 
 function createElement(grid, caselle, ordine){
     for(let i=1; i<=caselle; i++){
 
@@ -32,6 +34,13 @@ function createElement(grid, caselle, ordine){
         box.classList.add(ordine);
         
         grid.appendChild(box);
+
+        // mi metto in ascolto sui click dei box e in caso venga premuto cambio colore del background-color
+        box.addEventListener("click", function(){
+
+            this.classList.add("clicked");
+    
+        });
 
     }
 }
@@ -50,10 +59,13 @@ play.addEventListener("click", function(){
 
     // eseguo append delle caselle in funzione della difficoltà
     const grid = document.getElementById("grid");
-    createElement(grid, difficolta(livello)[0], difficolta(livello)[1])
+    createElement(grid, difficolta(livello)[0], difficolta(livello)[1]);
    
    
 });
+
+const clickQuadrato = document.getElementsByClassName("quadrato");
+console.log(clickQuadrato);
 
 
 

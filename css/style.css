@@ -51,6 +51,8 @@ footer{
     float: left;
 
     border: 1px solid #000;
+    
+    cursor: pointer;
 }
 
 .quadrato.dieci{
@@ -66,4 +68,8 @@ footer{
 .quadrato.sette{
     width: calc(100% /7);
     height: calc(100% /7);
+}
+
+.quadrato.clicked{
+    background-color: #6094e8;
 }

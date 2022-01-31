@@ -40,7 +40,7 @@ function createElement(grid, caselle, ordine){
         box.appendChild(numero);
 
 
-        // mi metto in ascolto sui click dei box e in caso venga premuto cambio colore del background-color
+        // mi metto in ascolto sui click dei box e in caso venga premuto cambio colore del background-color e colore delle scritte
         box.addEventListener("click", function(){
 
             this.classList.add("clicked");
@@ -67,9 +67,6 @@ play.addEventListener("click", function(){
     createElement(grid, difficolta(livello)[0], difficolta(livello)[1]);
    
 });
-
-const clickQuadrato = document.getElementsByClassName("quadrato");
-console.log(clickQuadrato);
 
 
 

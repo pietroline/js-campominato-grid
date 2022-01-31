@@ -26,29 +26,30 @@ function difficolta(livello){
 
 
 
-const livello = document.getElementById("difficolta").value;
-difficolta(livello);
-
-// console.log(livello)
-// const play = document.getElementById("play");
-// play.addEventListener("click", function(livello){
+const play = document.getElementById("play");
+play.addEventListener("click", function(){
 
    
-//     // console.log(livello)
-//     difficolta(livello);
+    let livello = document.getElementById("difficolta").value;
+    console.log(livello);
 
-// });
+    difficolta(livello);
+    console.log(difficolta(livello));
+    console.log(difficolta(livello)[0]);
+
+    // eseguo append delle caselle in funzione della difficoltà
+    const grid = document.getElementById("grid");
+    for(let i=1; i<=difficolta(livello)[0]; i++){
+
+        const box = document.createElement("div");
+        box.classList.add("quadrato");
+        box.classList.add(`${difficolta(livello)[1]}`);
+        
+        grid.appendChild(box);
+
+    }
+   
+});
 
 
 
-// eseguo append delle caselle in funzione della difficoltà
-const grid = document.getElementById("grid");
-for(let i=1; i<=difficolta(livello)[0]; i++){
-
-    const box = document.createElement("div");
-    box.classList.add("quadrato");
-    box.classList.add(`${difficolta(livello)[1]}`);
-    
-    grid.appendChild(box);
-
-}

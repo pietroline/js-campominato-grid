@@ -32,11 +32,9 @@ play.addEventListener("click", function(){
     document.getElementById("grid").innerHTML = "";
 
     let livello = document.getElementById("difficolta").value;
-    console.log(livello);
 
     difficolta(livello);
-    console.log(difficolta(livello));
-    console.log(difficolta(livello)[0]);
+
 
     // eseguo append delle caselle in funzione della difficoltà
     const grid = document.getElementById("grid");

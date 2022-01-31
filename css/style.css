@@ -22,8 +22,8 @@
 
 main{
     background-color: #65ffd5;
-
-    height: 200px; /*provvisorio*/
+    
+    padding: 5rem;
 }
 
 header{
@@ -36,4 +36,22 @@ footer{
     width: 80%;
 
     margin: 2rem auto;
+}
+
+.contenitore{
+    width: 40rem;
+    height: 40rem;
+
+    border: 1px solid #000;
+
+    margin: auto;
+}
+
+.quadrato{
+    width: calc(100% /10);
+    height: calc(100% /10);
+
+    float: left;
+
+    border: 1px solid #000;s
 }
